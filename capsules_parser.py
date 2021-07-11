@@ -23,10 +23,6 @@ if __name__ == "__main__":
     image_list = [item.contents[1].attrs['src'] for item in im]
 
 
-
-    # dictionary = {k:{'name': capsule[0], 'img': capsule[1]} 
-    #               for k, capsule in enumerate(zip(name_list, image_list))}
-
     dictionary = [{'name': capsule[0], 'img': capsule[1]} 
                 for capsule in zip(name_list, image_list)]
 
